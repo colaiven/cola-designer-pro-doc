@@ -21,6 +21,9 @@ module.exports = {
       '/start/': [
         '',
         'Start',
+        'Dev',
+        'Build',
+        'Problem',
       ],
       '/custom/': [
         '',
