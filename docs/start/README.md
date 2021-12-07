@@ -1,2 +1,25 @@
 # 简介
 Cola-Designer 是一个 基于VUE，实现拖拽 + 配置方式生成数据大屏，为简化开发、提高效率而生。
+![](../.vuepress/public/logo.svg)
+
+在线体验地址：<a href="http://colaiven.gitee.io/cola-designer/#/design" target="_blank">http://colaiven.gitee.io/cola-designer/#/design</a>  
+（没钱买服务器暂时只能体验前端，联合后端可自行拉取代码运行体验）   
+文档地址：<a href="" target="_blank">https://localhost:8080</a>  
+前端仓库：<a href="https://gitee.com/colaiven/cola-designer" target="_blank">https://gitee.com/colaiven/cola-designer</a>  
+后端仓库：<a href="https://gitee.com/colaiven/cola-designer-java" target="_blank">https://gitee.com/colaiven/cola-designer-java</a>  
+
+## 特性
+* 0 代码：
+  * 实现完全拖拽 + 配置式生成大屏，设计即生产。（动态数据需要后端提供API接口）
+* 快速开发&部署：
+  * 项目采用行业流行架构：SpringBoot+Vue，开发\部署方便。
+* 组件丰富:
+  * 内置element、dataV、echarts等优秀开源的报表常用组件，满足基本的设计需求。
+* 自定义：
+  * 设计器没有想要的组件？自己动手，丰衣足食。详细文档介绍5分钟可开发一个自己想要的组件。
+
+## 概览
+部分截图：
+![](../.vuepress/public/designer/m2.png)
+![](../.vuepress/public/designer/d2.png)
+![](../.vuepress/public/designer/d3.png)
