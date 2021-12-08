@@ -4,7 +4,7 @@ module.exports = {
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/logo.ico' }],
   ],
-  base: '/',
+  base: '/cola-designer-doc/',
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
