@@ -27,6 +27,8 @@ module.exports = {
       ],
       '/custom/': [
         '',
+        'Exm',
+        'Gallery',
       ],
       '/log/': [
         '',
