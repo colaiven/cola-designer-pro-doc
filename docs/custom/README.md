@@ -70,7 +70,7 @@ export default {
 
 ## 动态数据
 自定义组件若未在option.js中声明cptDataForm，则配置栏不会出现数据配置表单，cptDataForm中配置项如下：
-组件配置表单props（以下属性可直接在表单中绑定，值与页面同步）：
+
 | 属性名      | 说明          | 类型    |
 |  ----      |  ----        | ----   |
 | dataText     | 静态数据/API接口地址/SQL| String |
