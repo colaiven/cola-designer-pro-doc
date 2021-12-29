@@ -75,4 +75,4 @@ export default {
 |  ----      |  ----        | ----   |
 | dataText     | 静态数据/API接口地址/SQL| String |
 | dataSource     | 数据源，1:静态数据、2:API接口、3:SQL| Number |
-| pollTime     | 自定义组件的自定义属性| Number |
+| pollTime     | 接口轮询时间| Number |
