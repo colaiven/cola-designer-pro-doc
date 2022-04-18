@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>示例 | Cola-Designer</title>
-    <meta name="generator" content="VuePress 1.8.2">
+    <meta name="generator" content="VuePress 1.9.4">
     <link rel="icon" href="/cola-designer-doc/logo.ico">
     <meta name="description" content="基于VUE的拖拽式数据报表设计器">
     
-    <link rel="preload" href="/cola-designer-doc/assets/css/0.styles.d0788ac0.css" as="style"><link rel="preload" href="/cola-designer-doc/assets/js/app.f3d710a5.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/2.49282c9c.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/5.7b5950b9.js" as="script"><link rel="prefetch" href="/cola-designer-doc/assets/js/10.ed9846f6.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/11.72bdce77.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/12.2c799361.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/13.9b0bf09f.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/14.2835b673.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/15.9de39b2d.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/16.6e5df03b.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/3.dcc89aa2.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/4.da222b40.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/6.b274e015.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/7.5b43ce1e.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/8.0c727d2e.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/9.94352750.js">
-    <link rel="stylesheet" href="/cola-designer-doc/assets/css/0.styles.d0788ac0.css">
+    <link rel="preload" href="/cola-designer-doc/assets/css/0.styles.8dfbb63a.css" as="style"><link rel="preload" href="/cola-designer-doc/assets/js/app.4b972e0d.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/2.bb4712a9.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/5.32c956f1.js" as="script"><link rel="prefetch" href="/cola-designer-doc/assets/js/10.21e35803.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/11.d667bc78.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/12.d19095ef.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/13.9566541b.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/14.637b9614.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/15.2f847554.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/16.37931f71.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/3.5996a67f.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/4.4f21a56d.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/6.855ffc70.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/7.2f0e0a5a.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/8.049114ab.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/9.87ca0360.js">
+    <link rel="stylesheet" href="/cola-designer-doc/assets/css/0.styles.8dfbb63a.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cola-designer-doc/" class="home-link router-link-active"><!----> <span class="site-name">Cola-Designer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cola-designer-doc/" class="nav-link">
@@ -129,7 +129,7 @@
             <span class="token string">'cpt-test-text-option'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
                 cptDataForm<span class="token operator">:</span> <span class="token punctuation">{</span>
                     dataSource<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-                    dataText<span class="token operator">:</span><span class="token string">'我是文本'</span><span class="token punctuation">,</span>
+                    dataText<span class="token operator">:</span><span class="token string">'{&quot;value&quot;:&quot;我是文本&quot;}'</span><span class="token punctuation">,</span>
                     poolTime<span class="token operator">:</span> <span class="token number">0</span>
                 <span class="token punctuation">}</span><span class="token punctuation">,</span>
                 attribute<span class="token operator">:</span><span class="token punctuation">{</span>
@@ -142,12 +142,12 @@
 
 </code></pre></div><ol start="2"><li>将cpt-test-text.vue修改成以下内容</li></ol> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{width: width+<span class="token punctuation">'</span>px<span class="token punctuation">'</span>, height: height+<span class="token punctuation">'</span>px<span class="token punctuation">'</span>, color: option.attribute.color}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-    {{cptData}}
+    {{cptData.value}}
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-<span class="token keyword">import</span> <span class="token punctuation">{</span>getDataStr<span class="token punctuation">,</span> pollingRefresh<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@/utils/refreshCptData&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>getDataJson<span class="token punctuation">,</span> pollingRefresh<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;@/utils/refreshCptData&quot;</span><span class="token punctuation">;</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
   name<span class="token operator">:</span> <span class="token string">&quot;cpt-test-text&quot;</span><span class="token punctuation">,</span>
@@ -176,7 +176,7 @@
       <span class="token function">pollingRefresh</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>uuid<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>option<span class="token punctuation">.</span>cptDataForm<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>loadData<span class="token punctuation">)</span><span class="token comment">//固定写法</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token function">loadData</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//设置数据</span>
-      <span class="token function">getDataStr</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>option<span class="token punctuation">.</span>cptDataForm<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">getDataJson</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>option<span class="token punctuation">.</span>cptDataForm<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
         <span class="token comment">//res为数据表单的静态数据或执行API返回的数据</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>cptData <span class="token operator">=</span> res<span class="token punctuation">;</span>
       <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -212,6 +212,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/cola-designer-doc/assets/js/app.f3d710a5.js" defer></script><script src="/cola-designer-doc/assets/js/2.49282c9c.js" defer></script><script src="/cola-designer-doc/assets/js/5.7b5950b9.js" defer></script>
+    <script src="/cola-designer-doc/assets/js/app.4b972e0d.js" defer></script><script src="/cola-designer-doc/assets/js/2.bb4712a9.js" defer></script><script src="/cola-designer-doc/assets/js/5.32c956f1.js" defer></script>
   </body>
 </html>

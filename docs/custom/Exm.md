@@ -112,7 +112,7 @@ const cptOptions = {
             'cpt-test-text-option': {
                 cptDataForm: {
                     dataSource: 1,
-                    dataText:'我是文本',
+                    dataText:'{"value":"我是文本"}',
                     poolTime: 0
                 },
                 attribute:{
@@ -128,12 +128,12 @@ const cptOptions = {
 ```vue
 <template>
   <div :style="{width: width+'px', height: height+'px', color: option.attribute.color}">
-    {{cptData}}
+    {{cptData.value}}
   </div>
 </template>
 
 <script>
-import {getDataStr, pollingRefresh} from "@/utils/refreshCptData";
+import {getDataJson, pollingRefresh} from "@/utils/refreshCptData";
 
 export default {
   name: "cpt-test-text",
@@ -162,7 +162,7 @@ export default {
       pollingRefresh(this.uuid, this.option.cptDataForm, this.loadData)//固定写法
     },
     loadData() {//设置数据
-      getDataStr(this.option.cptDataForm).then(res => {
+      getDataJson(this.option.cptDataForm).then(res => {
         //res为数据表单的静态数据或执行API返回的数据
         this.cptData = res;
       });
