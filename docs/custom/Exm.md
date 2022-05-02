@@ -1,6 +1,6 @@
 # 示例
 ## 创建自定义组件
-本节将以文本组件为例，从0开始创建自定义组件，需要VUE基础。
+本节将以文本组件为例，从0开始创建自定义组件。
 
 1. 在components文件夹新建文件夹 mycpt
 2. 在mycpt文件夹新建cpt-test-text.vue，内容如下：
@@ -30,7 +30,8 @@ export default {
 }
 </script>
 ```
-3. 在mycpt文件夹新建cpt-test-text-option.vue，内容如下：
+3. 在/components/registerCpt.js中的cptList注册这个组件。
+4. 在mycpt文件夹新建cpt-test-text-option.vue，内容如下：
 ```vue
 <template>
   <div>
@@ -52,7 +53,8 @@ export default {
 }
 </script>
 ```
-4. 打开options.js，在cptOptions中新增如下内容：
+5. 在/components/registerOption.js中的cptList注册cpt-test-text-option这个组件。
+6. 打开options.js，在cptOptions中新增如下内容：
 ```javascript
 const cptOptions = {
     test: {//分组标识，对应cpt-test-text.vue中的group

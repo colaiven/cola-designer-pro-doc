@@ -13,7 +13,6 @@ module.exports = {
       {text: '首页', link: '/' },
       {text: '指南', link: '/start/' },
       {text: '自定义组件', link: '/custom/' },
-      {text: '更新日志', link: '/log/' },
       {text: 'Gitee', link: 'https://gitee.com/colaiven/cola-designer'},
       {text: 'GitHub', link: 'https://github.com/colaiven/cola-designer'}
     ],
@@ -29,9 +28,6 @@ module.exports = {
         '',
         'Exm',
         'Gallery',
-      ],
-      '/log/': [
-        '',
       ],
     },
   }
