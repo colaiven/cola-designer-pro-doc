@@ -8,7 +8,7 @@
     <link rel="icon" href="/cola-designer-doc/logo.ico">
     <meta name="description" content="基于VUE的拖拽式数据报表设计器">
     
-    <link rel="preload" href="/cola-designer-doc/assets/css/0.styles.12f99da1.css" as="style"><link rel="preload" href="/cola-designer-doc/assets/js/app.fda0da53.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/2.bb4712a9.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/5.cb8d504c.js" as="script"><link rel="prefetch" href="/cola-designer-doc/assets/js/10.c65a7b42.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/11.d667bc78.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/12.f6f806c0.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/13.177ca76c.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/14.11cbe5a5.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/15.3752bd5a.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/16.aab85e65.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/3.ea95d050.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/4.64737e30.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/6.40f31446.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/7.6c860793.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/8.049114ab.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/9.623424ed.js">
+    <link rel="preload" href="/cola-designer-doc/assets/css/0.styles.12f99da1.css" as="style"><link rel="preload" href="/cola-designer-doc/assets/js/app.633122e0.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/2.bb4712a9.js" as="script"><link rel="preload" href="/cola-designer-doc/assets/js/5.9a079abe.js" as="script"><link rel="prefetch" href="/cola-designer-doc/assets/js/10.e53c9b01.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/11.d667bc78.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/12.f6f806c0.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/13.1ad1d089.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/14.11cbe5a5.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/15.b0b58afc.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/16.112c7b4c.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/3.1585373e.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/4.fbd16ab9.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/6.40f31446.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/7.6c860793.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/8.049114ab.js"><link rel="prefetch" href="/cola-designer-doc/assets/js/9.623424ed.js">
     <link rel="stylesheet" href="/cola-designer-doc/assets/css/0.styles.12f99da1.css">
   </head>
   <body>
@@ -45,7 +45,7 @@
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
   name<span class="token operator">:</span> <span class="token string">&quot;cpt-test-text&quot;</span><span class="token punctuation">,</span>
   title<span class="token operator">:</span> <span class="token string">'我的组件'</span><span class="token punctuation">,</span>
-  icon<span class="token operator">:</span> <span class="token string">'el-icon-chat-line-square'</span><span class="token punctuation">,</span>
+  icon<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span><span class="token comment">//自行下载svg图标文件放在/src/assets/icon/目录下，icon对应文件名称(没有后缀)</span>
   initWidth<span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
   initHeight<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
   group<span class="token operator">:</span><span class="token string">'test'</span><span class="token punctuation">,</span>
@@ -76,6 +76,7 @@
 <span class="token punctuation">}</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><ol start="5"><li>在/components/registerOption.js中的cptList注册cpt-test-text-option这个组件。</li> <li>打开options.js，在cptOptions中新增如下内容：</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> cptOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token operator">...</span>
     test<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token comment">//分组标识，对应cpt-test-text.vue中的group</span>
         name<span class="token operator">:</span> <span class="token string">'自定义测试'</span><span class="token punctuation">,</span><span class="token comment">//分组名称</span>
         icon<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
@@ -208,6 +209,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/cola-designer-doc/assets/js/app.fda0da53.js" defer></script><script src="/cola-designer-doc/assets/js/2.bb4712a9.js" defer></script><script src="/cola-designer-doc/assets/js/5.cb8d504c.js" defer></script>
+    <script src="/cola-designer-doc/assets/js/app.633122e0.js" defer></script><script src="/cola-designer-doc/assets/js/2.bb4712a9.js" defer></script><script src="/cola-designer-doc/assets/js/5.9a079abe.js" defer></script>
   </body>
 </html>

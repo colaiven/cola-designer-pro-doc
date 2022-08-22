@@ -18,7 +18,7 @@
 export default {
   name: "cpt-test-text",
   title: '我的组件',
-  icon: 'el-icon-chat-line-square',
+  icon: '',//自行下载svg图标文件放在/src/assets/icon/目录下，icon对应文件名称(没有后缀)
   initWidth: 300,
   initHeight: 50,
   group:'test',
@@ -57,6 +57,7 @@ export default {
 6. 打开options.js，在cptOptions中新增如下内容：
 ```javascript
 const cptOptions = {
+    ......
     test: {//分组标识，对应cpt-test-text.vue中的group
         name: '自定义测试',//分组名称
         icon: '',
