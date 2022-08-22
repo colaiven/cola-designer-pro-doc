@@ -88,7 +88,7 @@ const cptOptions = {
 export default {
   name: "cpt-test-text",
   title: '我的组件',
-  icon: 'el-icon-chat-line-square',
+  icon: '',//自行下载svg图标文件放在/src/assets/icon/目录下，icon对应文件名称(没有后缀)
   initWidth: 300,
   initHeight: 50,
   group:'test',
@@ -141,7 +141,7 @@ import {getDataJson, pollingRefresh} from "@/utils/refreshCptData";
 export default {
   name: "cpt-test-text",
   title: '我的组件',
-  icon: 'el-icon-chat-line-square',
+  icon: '',//自行下载svg图标文件放在/src/assets/icon/目录下，icon对应文件名称(没有后缀)
   initWidth: 300,
   initHeight: 50,
   group:'test',
