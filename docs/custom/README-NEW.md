@@ -1,6 +1,5 @@
-# 自定义组件1.8.x
-旧版教程。
-
+# 自定义组件
+本节如何开发自定义组件。
 
 再看一下前端项目结构  
 <img src="../.vuepress/public/source/d1.png" width="360px" height="480px">
@@ -16,18 +15,48 @@
     --->在registerCpt.js中注册组件--->在registerOption.js注册配置表单--->使用
 ```
 
-在创建组件后需在export default 输出以下属性：
+## options.js
+cptOptions：
 
-| 属性名      | 说明          | 类型    |是否必填  | 默认值|
-   |  ----      |  ----        | ----   | ----   | ----  |
-| name       | 组件唯一标识   | String | 是      | 无 |
-| title      | 组件名        | String  | 是    | 未命名组件 |
-| icon       | 组件图标      | String  | 是     | el-icon-question |
-| initWidth  | 组件宽度(px)   | Number  | 否     | 300 |
-| initHeight | 组件高度(px)   | Number  | 否     | 200 |
-| group      | 组件分组标识   | String  | 否     | default |
+| 属性名      | 说明          | 类型    |是否必填 
+|  ----      |  ----        | ----   | ---- 
+| name       | 组件分组名称   | String | 是  
+| icon       | 组件分组图标   | String | 是
+| opened     | 分组是否展开   | String | 是
+| children   | 组件配置   | [ Child ] | 是
+Child:
 
-组件props（以下属性可直接在组建中使用，值与页面同步）：
+| 属性名      | 说明          | 类型    |是否必填| 默认值|
+|  ----      |  ----        | ----   | ----| ----  |
+| name       | 组件名称   | String | 是  | 无 |
+| icon       | 组件图标(/src/assets/icon目录下svg文件名)   | String | 否| 无 |
+| cptKey     | 组件唯一标识   | String | 是| 无 |
+| width   | 默认宽度   | Number | 否| 400 |
+| height   | 默认高度   | Number | 否| 300 |
+| cptOptionKey   | 组件配置唯一标识   | String | 否| cptKey+'-option' |
+| option   | 组件配置   | Option | 是| 无 |
+Option:
+
+| 属性名      | 说明          | 类型    |是否必填| 默认值|
+|  ----      |  ----        | ----   | ----| ----  |
+| attribute       | 组件属性   | Object | 是  | 无 |
+| cptDataForm       | 动态数据配置   | CptDataForm | 否| 无 |
+
+
+CptDataForm：
+
+| 属性名      | 说明          | 类型    |
+|  ----      |  ----        | ----   |
+| dataText     | 静态数据/API接口地址/SQL| String |
+| dataSource     | 数据源，1:静态数据、2:API接口、3:SQL| Number |
+| pollTime     | 接口轮询时间| Number |
+
+自定义组件若未在option.js中声明cptDataForm，则配置栏不会出现数据配置表单。
+
+
+
+
+## 组件props
 
 | 属性名      | 说明          | 类型    |
    |  ----      |  ----        | ----   |
@@ -36,54 +65,14 @@
 | width      | 组件宽度| Number |
 
 
-组件配置表单props（以下属性可直接在表单中绑定，值与页面同步）：
+## 组件配置表单props
 | 属性名      | 说明          | 类型    |
 |  ----      |  ----        | ----   |
 | attribute     | 自定义组件的自定义属性| Object |
 
-示例：
-```vue
-<template>
-  <div>
-    文本：{{option.text}}
-    宽：{{option.width}}
-    高：{{option.height}}
-  </div>
-</template>
 
-<script>
-export default {
-    name: "cpt-text",
-    title: '文字框',
-    icon: 'el-icon-chat-line-square',
-    initWidth: 300,
-    initHeight: 50,
-    group:'element',
-    props: {
-        option: Object,
-        width:{type:Number,default:300},
-        height:{type:Number,default:200},
-    },
-}
-</script>
-```
-
-## 动态数据
-自定义组件若未在option.js中声明cptDataForm，则配置栏不会出现数据配置表单，cptDataForm中配置项如下：
-
-| 属性名      | 说明          | 类型    |
-|  ----      |  ----        | ----   |
-| dataText     | 静态数据/API接口地址/SQL| String |
-| dataSource     | 数据源，1:静态数据、2:API接口、3:SQL| Number |
-| pollTime     | 接口轮询时间| Number |
-
-
-# 示例1.8.x
-## 创建自定义组件
-旧版教程
-
-本节将以文本组件为例，从0开始创建自定义组件。
-
+# 示例-创建自定义组件
+## 示例
 1. 在components文件夹新建文件夹 mycpt
 2. 在mycpt文件夹新建cpt-test-text.vue，内容如下：
 ```vue
@@ -99,15 +88,10 @@ export default {
 <script>
 export default {
   name: "cpt-test-text",
-  title: '我的组件',
-  icon: '',//自行下载svg图标文件放在/src/assets/icon/目录下，icon对应文件名称(没有后缀)
-  initWidth: 300,
-  initHeight: 50,
-  group:'test',
   props: {
     option: Object,
-    width:{type:Number,default:300},
-    height:{type:Number,default:200},
+    width: Number,
+    height: Number,
   },
 }
 </script>
@@ -135,28 +119,35 @@ export default {
 }
 </script>
 ```
-5. 在/components/registerOption.js中的cptList注册cpt-test-text-option这个组件。
-6. 打开options.js，在cptOptions中新增如下内容：
+5. 在/components/registerOption.js中的cptOptionsList注册cpt-test-text-option这个组件。
+6. 打开options.js，在export default中新增输出组件的配置项：
 ```javascript
-const cptOptions = {
-    ......
-    test: {//分组标识，对应cpt-test-text.vue中的group
+export default [
+    ...
+    {
         name: '自定义测试',//分组名称
-        icon: '',
+        icon: '',//分组图标，对应/src/assets/icon/文件夹下的图片名
         opened: true,//默认展开
-        options: {
-            'cpt-test-text-option': {
-                attribute:{
-                    text: '我是文本',
-                    color: '#409eff',
+        children:[
+            {
+                name: '边框', 
+                icon: 'border', //分组图标，对应/src/assets/icon/components/文件夹下的图片名
+                cptKey: 'cpt-test-text',//组件名\组件唯一标识
+                cptOptionKey:'cpt-test-text-option',//组件配置表单名，不写默认为:组件名-option
+                option: {
+                    attribute:{//配置项
+                        text: '我是文本',
+                        color: '#409eff',
+                    }
                 }
             }
-        }
+        ]
+        
     }
-}
+]
 ```
 完成上述步骤算是基本创建组件了，可以在设计界面看一下效果：
-![](../.vuepress/public/exm/d1.png)
+
 可见拉伸组件或修改属性组件内容会跟随改变。此时便可以在组件内对这些可变参数进行操作，
 可将cpt-test-text.vue修改成如下内容：
 ```vue
@@ -169,44 +160,50 @@ const cptOptions = {
 <script>
 export default {
   name: "cpt-test-text",
-  title: '我的组件',
-  icon: '',//自行下载svg图标文件放在/src/assets/icon/目录下，icon对应文件名称(没有后缀)
-  initWidth: 300,
-  initHeight: 50,
-  group:'test',
   props: {
     option: Object,
-    width:{type:Number,default:300},
-    height:{type:Number,default:200},
+    width:Number,
+    height:Number,
   },
 }
 </script>
 ```
 效果如下：
-![](../.vuepress/public/exm/d2.png)
+![](../.vuepress/public/exm/d5.png)
 宽高可设置为100%，这里只是演示可以这样干，部分第三方组件有设置100%的宽高视图不刷新现象，可如图设置宽高。
 ## 设置动态数据
-1. 在option.js中cpt-test-text-option的配置修改成如下内容：
+1. 在option.js中cpt-test-text的配置修改成如下内容：
 ```javascript
-const cptOptions = {
-    test: {//分组标识，对应cpt-test-text.vue中的group
-        name: '自定义测试',//分组名称
-        icon: '',
-        opened: true,//默认展开
-        options: {
-            'cpt-test-text-option': {
-                cptDataForm: {
-                    dataSource: 1,
-                    dataText:'{"value":"我是文本"}',
-                    poolTime: 0
-                },
-                attribute:{
-                    color: '#409eff',
+export default [
+    ...
+        {
+            name: '自定义测试',//分组名称
+            icon: '',//分组图标，对应/src/assets/icon/文件夹下的图片名
+            opened: true,//默认展开
+            children:[
+                {
+                    name: '我的文本组件',
+                    icon: '', //分组图标，对应/src/assets/icon/components/文件夹下的图片名
+                    cptKey: 'cpt-test-text',//组件名\组件唯一标识
+                    cptOptionKey:'cpt-test-text-option',//组件配置表单名，不写默认为:组件名-option
+                    option: {
+                        attribute:{//配置项
+                            text: '我是文本',
+                            color: '#409eff',
+                        },
+                        cptDataForm:{//动态数据配置
+                            dataSource: 1, //默认数据源1:静态数据，2:api接口,3:SQL
+                            pollTime: 0,//轮询时间
+                            dataText: '{"value": "文本组件动态数据"}',//静态数据
+                            apiUrl:'/test',//api地址
+                            sql:'select xxx'//sql
+                        },
+                    }
                 }
-            }
+            ]
+
         }
-    }
-}
+]
 
 ```
 2. 将cpt-test-text.vue修改成以下内容
@@ -222,11 +219,6 @@ import {getDataJson, pollingRefresh} from "@/utils/refreshCptData";
 
 export default {
   name: "cpt-test-text",
-  title: '我的组件',
-  icon: '',//自行下载svg图标文件放在/src/assets/icon/目录下，icon对应文件名称(没有后缀)
-  initWidth: 300,
-  initHeight: 50,
-  group:'test',
   props: {
     option: Object,
     width: Number,
@@ -258,6 +250,7 @@ export default {
 
 ```
 3. 将cpt-test-text-option.vue修改成以下内容：
+
 ```vue
 <template>
   <div>
@@ -278,10 +271,10 @@ export default {
 
 ```
 至此完成自定义组件动态数据的配置。可在数据一栏设置，效果如下：
-![](../.vuepress/public/exm/d3.png)
+
+![](../.vuepress/public/exm/d6.png)
 
 ## 注意事项
 * 组件命名避免与已有组件名称相同如:input、el-input... 建议使用个人/公司名称简称-分组名-组件名。
-* 组件自定义属性表单命名为：组件名-option。
 * 需要配置动态数据的组件必须设置uuid，否则不能清除数据表单轮询定时任务。
 * 对视图不刷新的第三方组件可对option.attribute进行深度监听，可参考进度池和地图组件写法。

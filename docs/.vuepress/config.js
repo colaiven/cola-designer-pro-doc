@@ -25,8 +25,7 @@ module.exports = {
         'Problem',
       ],
       '/custom/': [
-        '',
-        'Exm',
+        'README-NEW',
         'Gallery',
       ],
     },
