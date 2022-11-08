@@ -12,7 +12,7 @@ module.exports = {
     nav:[
       {text: '首页', link: '/' },
       {text: '指南', link: '/start/' },
-      {text: '自定义组件', link: '/custom/' },
+      {text: '自定义组件', link: '/custom/README-NEW.md' },
       {text: 'Gitee', link: 'https://gitee.com/colaiven/cola-designer'},
       {text: 'GitHub', link: 'https://github.com/colaiven/cola-designer'}
     ],
@@ -26,6 +26,7 @@ module.exports = {
       ],
       '/custom/': [
         'README-NEW',
+        'README-OLD',
         'Gallery',
       ],
     },

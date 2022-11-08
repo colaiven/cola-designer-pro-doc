@@ -134,6 +134,8 @@ export default [
                 icon: 'border', //分组图标，对应/src/assets/icon/components/文件夹下的图片名
                 cptKey: 'cpt-test-text',//组件名\组件唯一标识
                 cptOptionKey:'cpt-test-text-option',//组件配置表单名，不写默认为:组件名-option
+                width: 400,//组件默认宽，非必填
+                height: 200,//组件默认高，非必填
                 option: {
                     attribute:{//配置项
                         text: '我是文本',
