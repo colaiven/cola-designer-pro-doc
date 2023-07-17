@@ -57,7 +57,22 @@ export const searchIndex = [
   },
   {
     "title": "本地运行",
-    "headers": [],
+    "headers": [
+      {
+        "level": 2,
+        "title": "运行环境",
+        "slug": "运行环境",
+        "link": "#运行环境",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "运行",
+        "slug": "运行",
+        "link": "#运行",
+        "children": []
+      }
+    ],
     "path": "/start/devops/dev.html",
     "pathLocale": "/",
     "extraFields": []
@@ -84,6 +99,13 @@ export const searchIndex = [
         "title": "运行环境",
         "slug": "运行环境",
         "link": "#运行环境",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "打包",
+        "slug": "打包",
+        "link": "#打包",
         "children": []
       },
       {

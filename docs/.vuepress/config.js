@@ -36,7 +36,7 @@ export default defineUserConfig({
                     ]
                 },
                 {
-                    text: '部署&运行',
+                    text: '环境&运行',
                     collapsible: true,
                     children:[
                         '/start/devops/env.md',
