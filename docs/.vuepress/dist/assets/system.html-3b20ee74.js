@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-68629ff8","path":"/start/system.html","title":"后台管理","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1689585629000,"contributors":[{"name":"chao","email":"vchenghou@aliyun.com","commits":1}]},"filePathRelative":"start/system.md"}');export{t as data};

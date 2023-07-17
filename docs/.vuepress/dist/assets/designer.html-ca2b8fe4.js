@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as r,a as e,b as s}from"./app-88accbcc.js";const c={},n=e("h1",{id:"设计器-组件",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#设计器-组件","aria-hidden":"true"},"#"),s(" 设计器&组件")],-1),o=[n];function _(d,i){return a(),r("div",null,o)}const l=t(c,[["render",_],["__file","designer.html.vue"]]);export{l as default};

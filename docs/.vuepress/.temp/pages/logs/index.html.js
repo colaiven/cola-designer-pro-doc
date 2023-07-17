@@ -1,1 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-14e8f107\",\"path\":\"/logs/\",\"title\":\"更新日志\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"logs/readme.md\"}")
+export const data = JSON.parse("{\"key\":\"v-14e8f107\",\"path\":\"/logs/\",\"title\":\"更新日志\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[],\"git\":{\"updatedTime\":1689585629000,\"contributors\":[{\"name\":\"chao\",\"email\":\"vchenghou@aliyun.com\",\"commits\":1}]},\"filePathRelative\":\"logs/readme.md\"}")

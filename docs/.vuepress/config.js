@@ -10,6 +10,7 @@ export default defineUserConfig({
         ['link', { rel: 'icon', href: '/logo.ico' }],
         ['meta', { name: 'cola designer', content: 'cola designer cola-designer Cola-Designer'}]
     ],
+    base: '/cola-designer-pro-doc/',
     markdown: {
         lineNumbers: true, // 代码块显示行号
         externalLinks: { target: '_blank', rel: 'nofollow noopener noreferrer' }
