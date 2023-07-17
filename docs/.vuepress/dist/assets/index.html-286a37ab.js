@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,a as e,b as n}from"./app-99fac894.js";const o={},r=e("h1",{id:"更新日志",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#更新日志","aria-hidden":"true"},"#"),n(" 更新日志")],-1),s=[r];function _(d,i){return a(),c("div",null,s)}const l=t(o,[["render",_],["__file","index.html.vue"]]);export{l as default};

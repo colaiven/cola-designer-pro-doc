@@ -4,8 +4,8 @@ import { searchPlugin } from '@vuepress/plugin-search'
 
 export default defineUserConfig({
     lang: 'zh-CN',
-    title: '你好， VuePress ！',
-    description: '使用说明书',
+    title: 'Cola Designer Pro',
+    description: 'Cola Designer Pro使用说明书&开发手册',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
         ['link', { rel: 'icon', href: '/logo.ico' }],
         ['meta', { name: 'cola designer', content: 'cola designer cola-designer Cola-Designer'}]
@@ -22,7 +22,7 @@ export default defineUserConfig({
             {text: '指南', link: '/start/' },
             {text: '自定义组件', link: '/custom/' },
             {text: '更新日志', link: '/logs/' },
-            {text: '开源版', link: 'http://www.baidu.com' },
+            {text: '开源版', link: 'https://gitee.com/colaiven/cola-designer' },
         ],
         sidebar:{
             '/start/':[
