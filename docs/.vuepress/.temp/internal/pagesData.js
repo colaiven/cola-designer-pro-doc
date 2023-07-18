@@ -9,6 +9,8 @@ export const pagesData = {
   "v-31721d30": () => import(/* webpackChunkName: "v-31721d30" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/custom/step.html.js").then(({ data }) => data),
   // path: /logs/
   "v-14e8f107": () => import(/* webpackChunkName: "v-14e8f107" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/logs/index.html.js").then(({ data }) => data),
+  // path: /start/datasource.html
+  "v-778e82ae": () => import(/* webpackChunkName: "v-778e82ae" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/start/datasource.html.js").then(({ data }) => data),
   // path: /start/designer.html
   "v-097d6b70": () => import(/* webpackChunkName: "v-097d6b70" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/start/designer.html.js").then(({ data }) => data),
   // path: /start/

@@ -11,6 +11,8 @@ export const pagesComponents = {
   "v-31721d30": defineAsyncComponent(() => import(/* webpackChunkName: "v-31721d30" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/custom/step.html.vue")),
   // path: /logs/
   "v-14e8f107": defineAsyncComponent(() => import(/* webpackChunkName: "v-14e8f107" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/logs/index.html.vue")),
+  // path: /start/datasource.html
+  "v-778e82ae": defineAsyncComponent(() => import(/* webpackChunkName: "v-778e82ae" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/start/datasource.html.vue")),
   // path: /start/designer.html
   "v-097d6b70": defineAsyncComponent(() => import(/* webpackChunkName: "v-097d6b70" */"D:/workspace/colaiven/cola-designer-pro-doc/docs/.vuepress/.temp/pages/start/designer.html.vue")),
   // path: /start/

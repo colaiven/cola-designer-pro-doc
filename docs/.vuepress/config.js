@@ -28,19 +28,19 @@ export default defineUserConfig({
             '/start/':[
                 '/start/readme.md',
                 {
+                    text: '快速开始',
+                    collapsible: true,
+                    children:[
+                        '/start/devops/dev.md',
+                        '/start/devops/env.md',
+                    ]
+                }, {
                     text: '使用说明',
                     collapsible: true,
                     children:[
                         '/start/system.md',
                         '/start/designer.md',
-                    ]
-                },
-                {
-                    text: '环境&运行',
-                    collapsible: true,
-                    children:[
-                        '/start/devops/env.md',
-                        '/start/devops/dev.md',
+                        '/start/datasource.md',
                     ]
                 },
             ],

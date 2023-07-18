@@ -1,7 +1,7 @@
 <template><div><h1 id="本地运行" tabindex="-1"><a class="header-anchor" href="#本地运行" aria-hidden="true">#</a> 本地运行</h1>
 <p>后端技术栈：Maven + Springboot + Mybatis-plus + SpringSecurity + Mysql + Redis</p>
 <p>前端技术栈：Vue3 + Axios + Webpack + Echarts + Three.js + TDesign</p>
-<h2 id="运行环境" tabindex="-1"><a class="header-anchor" href="#运行环境" aria-hidden="true">#</a> 运行环境</h2>
+<h2 id="开发环境" tabindex="-1"><a class="header-anchor" href="#开发环境" aria-hidden="true">#</a> 开发环境</h2>
 <table>
 <thead>
 <tr>
@@ -28,6 +28,8 @@
 </tr>
 </tbody>
 </table>
+<h2 id="运行环境" tabindex="-1"><a class="header-anchor" href="#运行环境" aria-hidden="true">#</a> 运行环境</h2>
+<p>本软件采用B/S架构，需依赖浏览器运行，建议使用chrome112.x以上版本，不支持IE浏览器！项目使用webpack进行包管理，打包使用npm run build，打包完后将打包好的文件放到服务器中间件如nginx\tomcat，使用浏览器打开配置的路径即可访问。</p>
 <h2 id="运行" tabindex="-1"><a class="header-anchor" href="#运行" aria-hidden="true">#</a> 运行</h2>
 <ol>
 <li>拉取前后端代码，master分支为稳定分支（建议使用，更新频率 &gt; 1个月），dev为开发分支（更新频率较高）。</li>

@@ -1,4 +1,4 @@
-<template><div><h1 id="环境搭建" tabindex="-1"><a class="header-anchor" href="#环境搭建" aria-hidden="true">#</a> 环境搭建</h1>
+<template><div><h1 id="部署" tabindex="-1"><a class="header-anchor" href="#部署" aria-hidden="true">#</a> 部署</h1>
 <h2 id="服务器配置" tabindex="-1"><a class="header-anchor" href="#服务器配置" aria-hidden="true">#</a> 服务器配置</h2>
 <p>最小配置</p>
 <table>
@@ -63,7 +63,7 @@
 </tbody>
 </table>
 <h2 id="运行环境" tabindex="-1"><a class="header-anchor" href="#运行环境" aria-hidden="true">#</a> 运行环境</h2>
-<p>本软件使用B/S架构，依靠浏览器运行，推荐使用chrome 112.x +版本，不支持IE浏览器.</p>
+<p>本软件采用B/S架构，需依赖浏览器运行，建议使用chrome112.x以上版本，不支持IE浏览器！项目使用webpack进行包管理，打包使用npm run build，打包完后将打包好的文件放到服务器中间件如nginx\tomcat，使用浏览器打开配置的路径即可访问。</p>
 <h2 id="打包" tabindex="-1"><a class="header-anchor" href="#打包" aria-hidden="true">#</a> 打包</h2>
 <p>商业版提供完整jar包和前端dist包，用户可在协作平台--&gt;项目--&gt;选择进入项目--&gt;文档管理--&gt;文件网盘 选择版本号自行下载</p>
 <p>购买源码用户若需自行打包需注意切换分支，master分支为稳定分支（建议使用，更新频率 &gt; 1个月），dev为开发分支（更新频率较高）。</p>
@@ -72,7 +72,7 @@
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">npm</span> run build
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>后端打包：</p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>mvn clean pakage
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="部署" tabindex="-1"><a class="header-anchor" href="#部署" aria-hidden="true">#</a> 部署</h2>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="部署-1" tabindex="-1"><a class="header-anchor" href="#部署-1" aria-hidden="true">#</a> 部署</h2>
 <p>本软件使用前后端分离技术，静态资源与接口可由Nginx代理，下面介绍使用nginx部署的具体步骤：</p>
 <ol>
 <li>安装中间件并配置环境，导入数据库</li>

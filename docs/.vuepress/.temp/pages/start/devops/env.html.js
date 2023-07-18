@@ -1,1 +1,14 @@
-export const data = JSON.parse("{\"key\":\"v-28088b50\",\"path\":\"/start/devops/env.html\",\"title\":\"环境搭建\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"服务器配置\",\"slug\":\"服务器配置\",\"link\":\"#服务器配置\",\"children\":[]},{\"level\":2,\"title\":\"中间件\",\"slug\":\"中间件\",\"link\":\"#中间件\",\"children\":[]},{\"level\":2,\"title\":\"运行环境\",\"slug\":\"运行环境\",\"link\":\"#运行环境\",\"children\":[]},{\"level\":2,\"title\":\"打包\",\"slug\":\"打包\",\"link\":\"#打包\",\"children\":[]},{\"level\":2,\"title\":\"部署\",\"slug\":\"部署\",\"link\":\"#部署\",\"children\":[]}],\"git\":{\"updatedTime\":1689585629000,\"contributors\":[{\"name\":\"chao\",\"email\":\"vchenghou@aliyun.com\",\"commits\":1}]},\"filePathRelative\":\"start/devops/env.md\"}")
+export const data = JSON.parse("{\"key\":\"v-28088b50\",\"path\":\"/start/devops/env.html\",\"title\":\"部署\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"服务器配置\",\"slug\":\"服务器配置\",\"link\":\"#服务器配置\",\"children\":[]},{\"level\":2,\"title\":\"中间件\",\"slug\":\"中间件\",\"link\":\"#中间件\",\"children\":[]},{\"level\":2,\"title\":\"运行环境\",\"slug\":\"运行环境\",\"link\":\"#运行环境\",\"children\":[]},{\"level\":2,\"title\":\"打包\",\"slug\":\"打包\",\"link\":\"#打包\",\"children\":[]},{\"level\":2,\"title\":\"部署\",\"slug\":\"部署-1\",\"link\":\"#部署-1\",\"children\":[]}],\"git\":{\"updatedTime\":1689607646000,\"contributors\":[{\"name\":\"chao\",\"email\":\"vchenghou@aliyun.com\",\"commits\":2}]},\"filePathRelative\":\"start/devops/env.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
