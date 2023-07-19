@@ -40,7 +40,7 @@ mvn clean pakage
 ```
 ## 部署
 
-本软件使用前后端分离技术，静态资源与接口可由Nginx代理，下面介绍使用nginx部署的具体步骤：
+本软件使用前后端分离技术，静态资源与接口可由Nginx代理，下面介绍使用Nginx部署的具体步骤：
 1. 安装中间件并配置环境，导入数据库
 2. 下载安装包到服务器任意目录，将application-prod.yml放置与jar包同级目录
 3. 修改application-prod.yml配置文件，yml配置项如下：
@@ -76,7 +76,7 @@ mail:
   user: "123@qq.com"
   pass: "xxx"
 ```
-4. 添加nginx server配置，注意file代理的上传文件夹与application-prod.yml中upload.path路径一致:
+4. 添加Nginx server配置，注意file代理的上传文件夹与application-prod.yml中upload.path路径一致:
 ```
 server {
     listen       80;
@@ -99,7 +99,7 @@ server {
     }
 }
 ```
-5. 解压upload.zip到nginx和jar配置的文件上传目录(可选)
+5. 解压upload.zip到Nginx和jar配置的文件上传目录(可选)
 6. 启动jar
 ```shell
 nohup java -jar cola-designer-pro.jar &

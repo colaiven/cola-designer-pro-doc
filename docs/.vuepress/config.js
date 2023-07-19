@@ -41,13 +41,16 @@ export default defineUserConfig({
                         '/start/system.md',
                         '/start/designer.md',
                         '/start/datasource.md',
+                        '/start/component.md',
+                        '/start/problem.md',
                     ]
                 },
             ],
             '/custom/':[
                 '/custom/readme.md',
                 '/custom/step.md',
-                '/custom/options.md'
+                '/custom/options.md',
+                '/custom/problem.md'
             ]
         },
     }),

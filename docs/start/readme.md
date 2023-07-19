@@ -1,12 +1,12 @@
 # 简介
-cola-design-pro是基于cola-design开源版本，对功能进行打两升级，满足企业级数据可视化需求，旨在让更多的人看到数据可视化的魅力，帮助非专业的工程师通过图形化的界面轻松搭建专业水准的可视化应用。cola-designer-pro提供丰富的可视化模板，满足客户业务监控、数据统计、风险预警、地理信息分析等多种业务的展示需求。
+cola-design-pro是基于cola-design开源版本，对功能进行大量升级，满足企业级数据可视化需求，旨在让更多的人看到数据可视化的魅力，帮助非专业的工程师通过图形化的界面轻松搭建专业水准的可视化应用。cola-designer-pro提供丰富的可视化模板，满足客户业务监控、数据统计、风险预警、地理信息分析等多种业务的展示需求。
 
 ![login.png](../.vuepress/public/images/logo.svg)
 
-商业版官方网址：<a href="http://pro.icelery.fun/" target="_blank">http://pro.icelery.fun/ </a>
+商业版官方网址：[http://pro.icelery.fun/](http://pro.icelery.fun/)
 
 
-社区开源版：<a href="https://colaiven.gitee.io/cola-designer-doc/" target="_blank">https://colaiven.gitee.io/cola-designer-doc/ </a>
+社区开源版：[https://colaiven.gitee.io/cola-designer-doc/](https://colaiven.gitee.io/cola-designer-doc/)
 
 ## 特性
 * 多种图表组件，支撑多种数据类型的分析展示

@@ -1,1 +1,0 @@
-import{_ as t,o as s,c as a,a as e,b as c}from"./app-7a0df8eb.js";const o={},n=e("h1",{id:"后台管理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#后台管理","aria-hidden":"true"},"#"),c(" 后台管理")],-1),r=e("p",null,"权限相关",-1),_=[n,r];function d(i,l){return s(),a("div",null,_)}const f=t(o,[["render",d],["__file","system.html.vue"]]);export{f as default};
