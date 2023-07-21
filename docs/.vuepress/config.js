@@ -48,7 +48,7 @@ export default defineUserConfig({
             ],
             '/custom/':[
                 '/custom/readme.md',
-                '/custom/step.md',
+                '/custom/manage.md',
                 '/custom/options.md',
                 '/custom/problem.md'
             ]
