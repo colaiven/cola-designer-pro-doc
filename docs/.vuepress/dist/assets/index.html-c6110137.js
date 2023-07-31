@@ -1,4 +1,4 @@
-import{_ as n,o as s,c as t,a}from"./app-19b3a5d2.js";const e={},p=a(`<h1 id="开始" tabindex="-1"><a class="header-anchor" href="#开始" aria-hidden="true">#</a> 开始</h1><p>前端项目结构</p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token operator">-</span> <span class="token keyword">public</span>
+import{_ as n,o as s,c as t,a}from"./app-c2306462.js";const e={},p=a(`<h1 id="开始" tabindex="-1"><a class="header-anchor" href="#开始" aria-hidden="true">#</a> 开始</h1><p>前端项目结构</p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token operator">-</span> <span class="token keyword">public</span>
 <span class="token operator">-</span> src
     <span class="token operator">...</span>
     <span class="token operator">-</span> components <span class="token comment">//组件目录</span>
