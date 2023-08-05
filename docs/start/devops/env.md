@@ -90,7 +90,7 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     }
     location ^~ /file/ {
-        root /opt/upload/;
+        alias /opt/upload/file/;
     }
     location / {
         root   /opt/project/dist/;

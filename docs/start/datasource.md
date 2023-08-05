@@ -26,7 +26,7 @@ server {
         proxy_pass http://127.0.0.1:6882/;
     }
     location ^~ /file/ {
-        root /opt/upload/;
+        alias /opt/upload/file/;
     }
                          
     #新增接口代理
