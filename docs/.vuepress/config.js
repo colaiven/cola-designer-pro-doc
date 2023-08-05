@@ -33,6 +33,7 @@ export default defineUserConfig({
                     children:[
                         '/start/devops/dev.md',
                         '/start/devops/env.md',
+                        '/start/devops/static.md',
                     ]
                 }, {
                     text: '使用说明',
