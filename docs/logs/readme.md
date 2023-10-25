@@ -1,4 +1,11 @@
 # 更新日志
+* v2.2.0 2023-10-25
+  * [新增]大屏缩放模式配置
+
+    增量sql:
+```sql
+ALTER TABLE design_data ADD COLUMN scale_type TINYINT(1) DEFAULT 1 NOT NULL COMMENT '缩放模式：1铺满缩放，2比例缩放，3响应布局';
+```
 * v2.1.1 2023-10-18
   * [优化]跳转外部链接支持传参
   * [修复]修复缩放时画布被隐藏bug
@@ -14,6 +21,11 @@
   * [优化]跳转外部链接交互支持选择跳转方式
   * [修复]环形图显示bug修复
   * [修复]轮播图组件超出高度bug修复
+
+    增量sql:
+```sql
+ALTER TABLE `design_data` ADD COLUMN water_mark json COMMENT '水印配置';
+```
 * v2.0.2 2023-09-02
   * [新增]数字翻牌器新增圆角配置
   * [新增]新增水球图组件
