@@ -108,3 +108,57 @@ nohup java -jar cola-designer-pro.jar &
 ```shell
 http://pro.icelery.fun
 ```
+
+### 部署时带固定前缀
+
+例如访问路径需要调整为：
+```shell
+http://pro.icelery.fun/cola/
+```
+
+1. 修改前端打包配置
+    
+   前端打包配置需要修改3个文件：
+
+   ①. vue.config.js中添加public配置
+
+   ![login.png](../../.vuepress/public/start/devops/bu1.png)
+
+   ②. src/router/index.js调整路由模式为hash并设置base路径
+   
+   ![login.png](../../.vuepress/public/start/devops/bu2.png)
+
+   ③. env.js调整静态文件和api的前缀路径（根据实际使用场景而定）
+
+   ![login.png](../../.vuepress/public/start/devops/bu3.png)
+
+2. 修改nginx配置(参考)
+
+```
+server {
+   listen       80;
+   server_name  pro.icelery.fun;
+   location ^~ /cola/designApi/ {
+      proxy_pass http://127.0.0.1:6882/;
+      proxy_redirect off;
+      proxy_set_header Host $host;
+      proxy_set_header Ali-CDN-Real-IP $remote_addr;
+      proxy_set_header REMOTE-HOST $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+   }
+   location ^~ /cola/file/ {
+      alias /opt/upload/file/;
+   }
+   location /cola {
+      root   /opt/project/dist/;
+      index  index.html;
+      try_files  $uri $uri/ /index.html;
+   }
+}
+```
+
+3. 打包上传至服务器&访问
+
+```shell
+http://pro.icelery.fun/cola/
+```
