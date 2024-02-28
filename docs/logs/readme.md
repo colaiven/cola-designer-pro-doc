@@ -1,4 +1,13 @@
 # 更新日志
+* v2.3.0 2024-02-28
+  * [新增]记录登录IP和时间
+  
+    增量sql:
+```sql
+ALTER TABLE sys_user ADD COLUMN login_ip VARCHAR(255) COMMENT '登录IP';
+ALTER TABLE sys_user ADD COLUMN login_time datetime COMMENT '登录时间';
+```
+
 * v2.2.7 2024-02-06
   * [新增]按钮组件新增图标配置
   * [优化]按钮组件背景颜色配置调整为主题，新增是否点击全屏配置
