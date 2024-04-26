@@ -3,7 +3,7 @@ cola-design-pro是基于cola-design开源版本，对功能进行大量升级，
 
 ![login.png](../.vuepress/public/images/logo.svg)
 
-商业版官方网址：[http://pro.icelery.fun/](http://pro.icelery.fun/)
+商业版官方网址：[http://cdesign.fun/](http://cdesign.fun/)
 
 
 社区开源版：[https://colaiven.gitee.io/cola-designer-doc/](https://colaiven.gitee.io/cola-designer-doc/)
