@@ -119,6 +119,7 @@ socketData.cptText1
 ```sql
 select * from tb_test where month = '${url.month}'
 ```
+以上sql最终执行时会将表达式${url.month}替换为当前访问页面链接上的month参数，若当前URL上没有month参数则替换为空，需自行处理为空时的查询逻辑。
 
 API数据源：
 ```text
@@ -126,7 +127,7 @@ API数据源：
 ```
 例如访问报表时，在URL中加入month=202212访问，已上数据源写法最终会将${url.month}替换为URL中的month参数值202212，如果url中未传数据源中使用的参数，则替换为空，需自行处理为空时的查询逻辑。
 
-注：ws暂不支持从url动态取参。
+注：ws数据源暂不支持从url动态取参。
 
 ## 动态数据源获取当前时间参数
 
